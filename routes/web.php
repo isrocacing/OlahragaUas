@@ -17,9 +17,9 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-route::resource('mahasiswa', 'MahasiswaController');
+Route::group(['middleware' => 'auth'], function (){
+	Route::resource('home', 'MahasiswaController');
+});
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');

@@ -29,7 +29,7 @@
             </div>
         @endif
         
-        <form action="{{route('mahasiswa.update',$mahasiswa->id)}}" method="post" enctype="multipart/form-data">
+        <form action="{{route('home.update',$mahasiswa->id)}}" method="post" enctype="multipart/form-data">
             @csrf
             @method('PUT')
             <div class="form-group row">
@@ -94,7 +94,7 @@
 
              <hr>
                 <div class="form-group">
-                    <a href="{{route('mahasiswa.index')}}" class="btn btn-success">Kembali</a>
+                    <a href="{{route('home.index')}}" class="btn btn-success">Kembali</a>
                     <button type="submit" class="btn btn-primary">Edit</button>
                 </div>
         </form>

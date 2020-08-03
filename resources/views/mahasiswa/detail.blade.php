@@ -62,7 +62,7 @@
         </div> -->
         <div class="form-group row">
             <div class="col-md-12">
-                <a href="{{route('mahasiswa.index')}}" class="btn  btn-success">Kembali</a>
+                <a href="{{route('home.index')}}" class="btn  btn-success">Kembali</a>
             </div>
         </div>
 

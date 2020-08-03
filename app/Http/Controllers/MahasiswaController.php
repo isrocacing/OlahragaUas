@@ -47,7 +47,7 @@ class MahasiswaController extends Controller
         ]);
  
         Mahasiswa::create($request->all());
-        return redirect()->route('mahasiswa.index')
+        return redirect()->route('home.index')
                          ->with('success','Data berhasil ditambahkan');
     }
 
@@ -98,7 +98,7 @@ class MahasiswaController extends Controller
         $mahasiswa->kelasSiswa = $request->get('kelasSiswa');
         $mahasiswa->jurusanSiswa = $request->get('jurusanSiswa');
         $mahasiswa->save();
-        return redirect()->route('mahasiswa.index')
+        return redirect()->route('home.index')
                          ->with('success', 'Data berhasil diupdate');
     }
 
@@ -112,7 +112,7 @@ class MahasiswaController extends Controller
     {
         $mahasiswa = Mahasiswa::find($id);
         $mahasiswa->delete();
-        return redirect()->route('mahasiswa.index')
-                         ->with('success', 'Data Alumni berhasil dihapus');
+        return redirect()->route('home.index')
+                         ->with('success', 'Data berhasil dihapus');
     }
 }

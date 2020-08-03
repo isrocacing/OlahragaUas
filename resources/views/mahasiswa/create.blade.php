@@ -29,7 +29,7 @@
             </div>
         @endif
         
-        <form action="{{route('mahasiswa.store')}}" method="post" enctype="multipart/form-data">
+        <form action="{{route('home.store')}}" method="post" enctype="multipart/form-data">
             @csrf
             <div class="form-group row">
                 <label for="namaSiswa" class="col-sm-2 col-form-label">Nama Siswa</label>
@@ -95,7 +95,7 @@
 
              <hr>
                 <div class="form-group">
-                    <a href="{{route('mahasiswa.index')}}" class="btn btn-success">Kembali</a>
+                    <a href="{{route('home.index')}}" class="btn btn-success">Kembali</a>
                     <button type="submit" class="btn btn-primary">Tambah</button>
                 </div>
         </form>

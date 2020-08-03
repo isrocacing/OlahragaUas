@@ -16,7 +16,7 @@
                 <h3> Daftar Hadir Olahraga </h3>
             </div>
             <div class="col-sm-2">
-                <a class="btn btn-success" href="{{ route('mahasiswa.create')}}"> Tambah Siswa </a>
+                <a class="btn btn-success" href="{{ route('home.create')}}"> Tambah Siswa </a>
             </div>
         </div> 
         <br>
@@ -46,9 +46,9 @@
                 <td>{{$mahasiswa->kelasSiswa}}</td>
                 <td>{{$mahasiswa->jurusanSiswa}}</td>
                 <td>
-                    <form action="{{ route('mahasiswa.destroy',$mahasiswa->id) }}" method="post">
-                    <a class="btn btn-sm btn-success" href="{{ route('mahasiswa.show', $mahasiswa->id)}}">Show</a>
-                    <a class="btn btn-sm btn-warning" href="{{ route('mahasiswa.edit', $mahasiswa->id)}}">Edit</a>
+                    <form action="{{ route('home.destroy',$mahasiswa->id) }}" method="post">
+                    <a class="btn btn-sm btn-success" href="{{ route('home.show', $mahasiswa->id)}}">Show</a>
+                    <a class="btn btn-sm btn-warning" href="{{ route('home.edit', $mahasiswa->id)}}">Edit</a>
                     @csrf
                     @method('DELETE')
                     <button type="submit" class="btn btn-sm btn-danger">Delete</button>
